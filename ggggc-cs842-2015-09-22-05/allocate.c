@@ -43,7 +43,7 @@
 #endif
 
 /* REMOVE THIS FOR SUBMISSION! */
-#include <gc.h>
+//#include <gc.h>
 /* --- */
 
 #include "ggggc/gc.h"
@@ -158,6 +158,7 @@ void ggggc_freeGeneration(struct GGGGC_Pool *pool)
 void *ggggc_malloc(struct GGGGC_Descriptor *descriptor)
 {
     /* FILLME */
+    
     GGC_YIELD();
     return GC_MALLOC(descriptor->size * sizeof(void*));
 }
