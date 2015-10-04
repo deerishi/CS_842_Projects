@@ -1,0 +1,17 @@
+/home/drishi/CS 842 project/ggggc-cs842-2015-09-22-05/allocate.c:#include "allocate-malloc.c"
+/home/drishi/CS 842 project/ggggc-cs842-2015-09-22-05/allocate.c:#warning GGGGC: No allocator available other than malloc!
+/home/drishi/CS 842 project/ggggc-cs842-2015-09-22-05/allocate.c:#include "allocate-malloc.c"
+/home/drishi/CS 842 project/ggggc-cs842-2015-09-22-05/allocate.c:void *ggggc_malloc(struct GGGGC_Descriptor *descriptor)
+/home/drishi/CS 842 project/ggggc-cs842-2015-09-22-05/allocate.c:void *ggggc_mallocPointerArray(ggc_size_t sz)
+/home/drishi/CS 842 project/ggggc-cs842-2015-09-22-05/allocate.c:    struct GGGGC_Array *ret = (struct GGGGC_Array *) ggggc_malloc(descriptor);
+/home/drishi/CS 842 project/ggggc-cs842-2015-09-22-05/allocate.c:void *ggggc_mallocDataArray(ggc_size_t nmemb, ggc_size_t size)
+/home/drishi/CS 842 project/ggggc-cs842-2015-09-22-05/allocate.c:    struct GGGGC_Array *ret = (struct GGGGC_Array *) ggggc_malloc(descriptor);
+/home/drishi/CS 842 project/ggggc-cs842-2015-09-22-05/allocate.c:    ret = (struct GGGGC_Descriptor *) ggggc_malloc(&tmpDescriptor);
+/home/drishi/CS 842 project/ggggc-cs842-2015-09-22-05/allocate.c:    ret = (struct GGGGC_Descriptor *) ggggc_malloc(dd);
+/home/drishi/CS 842 project/ggggc-cs842-2015-09-22-05/allocate.c:/* and a combined malloc/allocslot */
+/home/drishi/CS 842 project/ggggc-cs842-2015-09-22-05/allocate.c:void *ggggc_mallocSlot(struct GGGGC_DescriptorSlot *slot)
+/home/drishi/CS 842 project/ggggc-cs842-2015-09-22-05/allocate.c:    return ggggc_malloc(ggggc_allocateDescriptorSlot(slot));
+/home/drishi/CS 842 project/ggggc-cs842-2015-09-22-05/allocate-malloc.c: * Allocation functions (malloc)
+/home/drishi/CS 842 project/ggggc-cs842-2015-09-22-05/allocate-malloc.c:            space = malloc(GGGGC_POOL_BYTES * i);
+/home/drishi/CS 842 project/ggggc-cs842-2015-09-22-05/allocate-malloc.c:                perror("malloc");
+/home/drishi/CS 842 project/ggggc-cs842-2015-09-22-05/roots.c:        malloc(sizeof(struct GGGGC_PointerStack) + ggggc_pointerStack->size * sizeof(void *));
